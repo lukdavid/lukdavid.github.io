@@ -1,0 +1,65 @@
+html, body {
+  margin:0px;
+  height:100%;
+  font-family: 'Roboto', sans-serif;
+}
+
+.navigation {
+  position: fixed;
+  top: 2%;
+  right: 5%;
+  display: flex;
+  align-items: flex-end;
+}
+
+.navigation a {
+  padding-right: 10px;
+}
+
+.greenbg{
+  background-color: rgba(53, 165, 44, 0.5);
+}
+
+.full-page-component{
+  position: relative;
+  height: 100vh;
+  padding: 2%;
+}
+
+.greenbg{
+  background-color: rgba(53, 165, 44, 0.5);
+}
+
+.redbg{
+  background-color: rgba(5230, 59, 9, 0.5);
+}
+
+.gradientbggreenblue{
+  background: rgba(174,220,238, 0.5);
+  background: radial-gradient(circle, rgba(174,220,238,0.8) 0%, rgba(54,165,44,0.8) 100%);
+}
+
+.gradientbgbluepink{
+  background: rgb(238,174,202);
+  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+
+@keyframes slidein {
+  from {
+    bottom: -100%;
+  }
+  to {
+    bottom: 0;
+  }
+}
+
+.portrait-img{
+  height: 85vh;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin-top: auto;
+  animation: slidein 1.2s ease-in 0s 1;
+  -webkit-animation: slidein 1.2s ease-in 0s 1;
+
+}

@@ -1,24 +1,37 @@
 html, body {
   margin:0px;
-  height:100%;
   font-family: 'Roboto', sans-serif;
+  background: rgba(174,220,238, 0.5);
+  background: radial-gradient(circle, rgba(174,220,238,0.8) 0%, rgba(54,165,44,0.8) 100%);
 }
 
-.navigation {
+nav {
   position: fixed;
-  top: 2%;
-  right: 5%;
+  display: inline-block;
+  z-index: 1;
+  right: 10px;
+}
+
+nav ul {
   display: flex;
   align-items: flex-end;
 }
 
-.navigation a {
+nav ul li {
+  list-style-type: none;
   padding-right: 10px;
 }
-
-.greenbg{
-  background-color: rgba(53, 165, 44, 0.5);
+.active {
+  color: orange;
 }
+
+/* .navigation .active a{
+  color: "red";
+} */
+
+/* .greenbg{
+  background-color: rgba(53, 165, 44, 0.5);
+} */
 
 .full-page-component{
   position: relative;
@@ -34,10 +47,10 @@ html, body {
   background-color: rgba(5230, 59, 9, 0.5);
 }
 
-.gradientbggreenblue{
+/* .gradientbggreenblue{
   background: rgba(174,220,238, 0.5);
   background: radial-gradient(circle, rgba(174,220,238,0.8) 0%, rgba(54,165,44,0.8) 100%);
-}
+} */
 
 .gradientbgbluepink{
   background: rgb(238,174,202);

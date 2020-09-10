@@ -22,7 +22,6 @@ Router.prototype = {
         this.rootElem = document.getElementById('app');
     },
     init: function () {
-        console.log("Router init")
         var r = this.routes;
         (function(scope, r) { 
             window.addEventListener('hashchange', function (e) {
@@ -36,7 +35,7 @@ Router.prototype = {
             for (var i = 0, length = r.length; i < length; i++) {
                 var route = r[i];
                 if(route.isActiveRoute(window.location.hash.substr(1))) {
-                    console.log(`Has changed to : ${route.htmlName}`)
+                    // console.log(`Has changed to : ${route.htmlName}`)
                     scope.goToRoute(route.htmlName);
                 }
             }
@@ -50,7 +49,6 @@ Router.prototype = {
         }
     },
     goToRoute: function (htmlName, isDefault) {
-        // console.log(`Go to route called, to ${htmlName}`)
         (function(scope) { 
             var url = 'views/' + htmlName,
                 xhttp = new XMLHttpRequest();

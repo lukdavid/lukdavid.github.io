@@ -1,5 +1,7 @@
 'use strict';
 
+const animationIds = ["portrait"]
+
 function Router(routes) {
     try {
         if (!routes) {
@@ -42,13 +44,12 @@ Router.prototype = {
             for (var i = 0, length = r.length; i < length; i++) {
                 var route = r[i];
                 if(route.default) {
-                    console.log(`Default : ${route.htmlName}`)
-                    scope.goToRoute(route.htmlName);
+                    scope.goToRoute(route.htmlName, true);
                 }
             }
         }
     },
-    goToRoute: function (htmlName) {
+    goToRoute: function (htmlName, isDefault) {
         // console.log(`Go to route called, to ${htmlName}`)
         (function(scope) { 
             var url = 'views/' + htmlName,
@@ -59,7 +60,9 @@ Router.prototype = {
                 if (this.readyState === 4 && [0, 200].includes(this.status)) {
                     // status 0 : when in local
                     scope.rootElem.innerHTML = this.responseText;
-                    console.log(this.responseText)
+                    if (isDefault){
+                        animationIds.forEach(id => document.getElementById(id).classList.add("animated"))
+                    }
                 }
             };
             xhttp.open('GET', url, true);

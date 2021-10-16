@@ -1,0 +1,111 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    
+      <meta charset="utf-8">
+      <title></title>
+      
+      
+        
+          
+        <link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-1.0.2.min.css" type="text/css" />
+        
+        
+          
+        <script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-1.0.2.min.js"></script>
+        <script type="text/javascript">
+            Bokeh.set_log_level("info");
+        </script>
+        <style>
+          body {
+            display: flex;
+            font-family:"Helvetica Neue";
+            justify-content: center;
+          }
+          .hint {
+            font-style: italic;
+            opacity: 0.7;
+          }
+          .title {
+            text-align: center;
+          }
+        </style>
+  </head>
+  
+  
+  <body>
+    
+      <div>
+        
+          <div class="title">
+            <h3>CO<sub>2</sub> emissions from electricity generation (2016)</h3>
+          </div>
+          
+          
+            
+          <div class="bk-root" id="6fc081fb-3065-4844-9755-3f1300df99d3"></div>
+            
+          
+        
+      
+      
+        <script type="application/json" id="114809">
+          {"7b33d68f-d6d2-411c-bd62-6cd0c87c1453":{"roots":{"references":[{"attributes":{"children":[{"id":"112760","subtype":"Figure","type":"Plot"},{"id":"112796","subtype":"Figure","type":"Plot"}]},"id":"112824","type":"Column"},{"attributes":{"source":{"id":"112794","type":"ColumnDataSource"}},"id":"112820","type":"CDSView"},{"attributes":{"fill_alpha":{"value":0.7},"fill_color":{"field":"colors1"},"line_alpha":{"value":0.7},"line_color":{"value":"#1f77b4"},"size":{"field":"Size","units":"screen"},"x":{"field":"Nuclear"},"y":{"field":"gCO2kWh"}},"id":"112789","type":"Circle"},{"attributes":{"source":{"id":"112757","type":"ColumnDataSource"}},"id":"112793","type":"CDSView"},{"attributes":{"js_property_callbacks":{"change:indices":[{"id":"112823","type":"CustomJS"}]}},"id":"112822","type":"Selection"},{"attributes":{"callback":null,"data":{"colors":["maroon","brown","sienna","mediumslateblue","deepskyblue","goldenrod","purple","darkgreen","limegreen","palegreen"],"index":{"__ndarray__":"AAAAAAAA4D8AAAAAAAD4PwAAAAAAAARAAAAAAAAADEAAAAAAAAASQAAAAAAAABZAAAAAAAAAGkAAAAAAAAAeQAAAAAAAACFAAAAAAAAAI0A=","dtype":"float64","shape":[10]},"means":{"__ndarray__":"ms3RYET2OEC2F+zUMpD/P2zZBZuxVjRAt7X5jGCwMEC6kVMaGXE1QFp/ukUrABFAMcjeX8Lb8D91CBs8ebr/P30HLiIJ7xlAoClSeotr6j8=","dtype":"float64","shape":[10]}},"selected":{"id":"114563","type":"Selection"},"selection_policy":{"id":"114564","type":"UnionRenderers"}},"id":"112794","type":"ColumnDataSource"},{"attributes":{"callback":null,"factors":["Coal","Oil","Gas","Nuclear","Hydro","Biofuels","Waste","Solar PV","Wind","Other"]},"id":"112798","type":"FactorRange"},{"attributes":{"callback":null,"data":{"Biofuels":{"__ndarray__":"S/yTi9ErBEBWINe9l7kGQPbABX1/kCpAZtchWCqoF0A2E4QjVmz2PwtEbsx9Cx5AQMv5s5w/+z8++PjwRR2cPyuQK84TMN0/iTTONv0u9z8vmdLSSBEwQIVsvF6czhtAm/J2fkSl7z8S0NfiqgD+P1WQ3QQwoew/acbQcbZaEkCKaAKYmNv8P2q2zD03UhlAdGrwO2hbGUBinmGeYZ4pQGv49dlyycU/6YYoyTwb4D9GK+OsWCQZQPdBZ+E6uhRAh+0ZSL0d4z8KA16gT9LsP2mQybYOo/Y/QRZJicoWIEB/b9YHd/sWQJBcz3sQpvA/3WYK6hETE0Ari7f/y2IWQA==","dtype":"float64","shape":[32]},"Coal":{"__ndarray__":"0tXPgxYkQUC+yLzjgrFSQDXa8HJsCz1AMS1WvtKSKkDBhkhYfF4/QC7oti4qD0NAXXTRRRddPkAkR1QeVAe5P+PnWx92mCVAEivDveXaQEC/WrIFgrAuQB7Q2j3gGkVA4yhVP/bnREAuGV/IMZ8iQLu+bjZJS/4/96VF4sTzNEDuqA+Ca0UrQPuF6ChIRChAvutN1PY2F0AAAAAAAAAAAAtZyEIWEkJA0IcIF/VXQUAS4Sxhvo7lP1D+4tnW1QhABfWj+l3bQEAAAAAAAAAAAEFOKMeMqANAUZNeGhCNIkCAg99sJB4yQLLfh/4BDlFAAk9Oo6bzU0Dd2sfxxdJKQA==","dtype":"float64","shape":[32]},"Country":["Netherlands","India","Denmark","Italy","United States","Chile","Slovenia","Norway","Mexico","Japan","Finland","Germany","Korea","Canada","France","Portugal","Spain","Slovak Republic","Austria","Latvia","Israel","Greece","Sweden","Belgium","Turkey","Switzerland","New Zealand","United Kingdom","Hungary","China, People's Republic of","Poland","Czech Republic"],"Gas":{"__ndarray__":"V+uRADhuR0DmPG1HGEkTQIW99kfWYhxAluWPLI/SRUDemApGOW1AQIlNiTLy3i1AXXTRRRddBEB86RXKcdv7Py9noMviAU5AJjN/jc+bQ0CIPxoDC9UVQGy2nLD3bSlA2Lfg1fqLNkBR8DPB1pMiQLAQSRtjGRlAP2VkW2LfNEB8P8WS8zozQICjJQwTohZABdtmdLYkKUAX6RbpFulGQDwuXrYBek5AFVJTZ9JPO0CxzZmTrY7ZPzFBd5ViAjpAv1Of5OlMQEBrAU7Cvvv1P5HmGIrX+ypACLLT/bYeRUCUuxW+6mI0QCgUv5Zi7wVAnPYLZzfOEkDf0VnEcNURQA==","dtype":"float64","shape":[32]},"Hydro":{"__ndarray__":"rkcC4PhDtj8gMaQWvp0iQHp2PXBB368/GzSGhNGfLkDLPKev1hEbQIUY1x+qWD1A+4a1b1j7PEDOZBwZqBtYQLiKy4xEKiNAAWVYcbtqIEB6byuaphE3QGdy0N3hJhBAgswNkOno8j+Jq/y7UANNQKCi0AN6WydAqf+Vz/4MPEB2wtNEBwctQDOwkTDfGTFAHY5T0iVnT0BQsE+wT7BDQAAAAAAAAAAAWs2yr/1xJEArfIH9F+pDQCBoT5CNBvw/GInKt2+QOECa8GfCnwlNQPTFd/XL701ANdhClfewA0CE76XoFhTqP0pLbP9JMTNAQKKk6qQv+T/l9gpkncgOQA==","dtype":"float64","shape":[32]},"Nuclear":{"__ndarray__":"Gp/PLreNC0A9JtuaZ4cEQAAAAAAAAAAAAAAAAAAAAAD3/xKyX3UzQAAAAAAAAAAA0kUXXXRRQUAAAAAAAAAAAPBmEoxtYwpAZLRh5a/g+z8zH1EfofBAQA3TXHsTJypA9+Y2RxzcPEDiNSQCY1AuQEGysIVEJFJAAAAAAAAAAAAO86GxvFg1QEwMexUibUtAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwtMuiLzlEQJGBP1pvmUlAAAAAAAAAAACenMrQbbxAQAAAAAAAAAAA2i9r6hsiNUDOszbF2UFJQEl4564PcQtAAAAAAAAAAACswJHrdPc8QA==","dtype":"float64","shape":[32]},"Oil":{"__ndarray__":"a3byTWrM8T+LOGUX/l35P/GmoMOa7vA/yqq5BdjJEECinBTxvcTpP87eCCtZYg1AERERERERsT+qnPQmTJKUP7Vtm7wtLiVANv+3ArBNIEBFltSkoLDSP6X/d5pH5+w/KPPSfsBOCUDDeFpCEMPzP96BF7UMOd0/GMek0rhAAUAqu3/nT6QYQKHBAr2L6/s/80XfffQ/9z8AAAAAAAAAAF4ResIyhds/Ws2yr/1xJEDzlxSpwFPQP2MA+CXsm8w/b6HuNbyE5j9omz4qgZuvP9INCGQMEHM/9RV4H8FW4T8FlkCWp1/JP5CFjOpYV8U/d+iREb8c9j+S2fsYo028Pw==","dtype":"float64","shape":[32]},"Other":{"__ndarray__":"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAw39xrjVoAUDcn5KtXIXgPwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANSQSsLEtP4/H6Mvh8L7zj8AAAAAAAAAAIzLOOjqr5s/x0oVev+etj/Eveda6xhmP4AkmwyIRLc/5/rJKe5C0j+SFLhizz8AQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlj+xvOcr/D8AAAAAAAAAAMdsCrsjRzFAAAAAAAAAAAAAAAAAAAAAAGXpZqMOvWU/AAAAAAAAAAAAAAAAAAAAAA==","dtype":"float64","shape":[32]},"Production":{"__ndarray__":"WDm0yHa+XEDHSzeJQRaXQBKDwMqhhT5AjZduEoMQckApXI/CddywQMHKoUW201NAAAAAAACAMEAtsp3vp6piQM/3U+OlBXRAJzEIrBwykEDJdr6fGh9RQAIrhxbZOYRAqMZLN4mKgUAj2/l+atqEQClcj8L1XIFApHA9CtcjTkDb+X5qvCpxQMl2vp8a7zpAL90kBoEVUUAzMzMzM7MZQFg5tMh2vlBA8tJNYhA4S0C4HoXrUYBjQI2XbhKDQFVAhetRuB4bcUBmZmZmZpZPQOkmMQisfEVAqvHSTWI2dUAOLbKd78c/QHnpJjHoSbhAGQRWDi3SZEASg8DKoc1UQA==","dtype":"float64","shape":[32]},"Size":{"__ndarray__":"pXfkh6cnJUAyPgiTmcY4QHHJ+RouMRtAQhhd+rfDLEAyEJZWebVBQP/lI80PsSJApP0Z170mFkD+Kwrt0BQnQEq5ZPqjxC1ABnJEi6sDNkAI/Di7r8whQKMaK9Lx0DJAUbFGf53xMUDtXBMNOwIzQNPl4YgF4jFAtp0BqeUOIUD6dHCNrkcsQBADUvb1FBpANSVid1vJIUD5w+la+iwQQB4hKr3yqiFAQGhacQF9IEDtanO9mWsnQIg6v4wOISNA4fLcvRg/LEAKSj8Gt1MhQOhhcR8keh5A20OtNMRYLkBzkABwm48bQAAAAAAAAERAYy26C+nvJ0A2InvYV/4iQA==","dtype":"float64","shape":[32]},"Solar PV":{"__ndarray__":"r9KbDXm19T8UaJFUCpruP0gUMxctgANAzkyJbyOXHkCrv3QaIEnxP4gC1LTJngpA5ClBnhLk+T8AAAAAAAAAACVnL+lFI7Q/D8V76Z2pE0BdzGjqF2uZP8sX/OmTixdAiyJUOqI07T/dwM+65BHdP+dw1MqBf/c/0UUXXXTR9T8Ec2rVJYEHQPwEjgOfqf8/mM2G+VOp+T8AAAAAAAAAAN3pqOdCcQJAvKx2snvgHEDYFpDjFHe3P627Cba+Cg1Ab3EbHKJj2D+p5XvnTeEAQHUWjSIU+r4/HB/qQTyQCEA7nDnQDj3kPyq2sdtuXfM/2X/aQcQOsz9FbrEOuHwEQA==","dtype":"float64","shape":[32]},"Waste":{"__ndarray__":"fK+Zu7/VCUBRanwThdS8P2MFC3vtjxRA7JqY/xg4+z903/EZgajbPwAAAAAAAAAA0xgwjQHTqD9C9mNVue3QPxNbEgaSVZc/VgxSy7yg/D8RMl2ayCX2P4xQO0ocZABA0B3i4+mywj8OAxfIJlWkP2hwEiM6X+o/vqtPGdmW8D8vEabTPSDhP+ayB3Gyz8Y/mCxoqqsw/D8AAAAAAAAAAAAAAAAAAAAAmF07SABW2D930zn8RccAQLGoE2iQCwRAbWbh1Gv1gT92cWC4nKsOQAAAAAAAAAAAzSF1c2fJAUBpoH646AH3P8+7d0aVfsc/BlUJ5UxKwT98T2SqvojLPw==","dtype":"float64","shape":[32]},"Wind":{"__ndarray__":"57WP515sHEC3idZ8VUkIQHKk+fZh8ERAIFtEMfd6GEAmp6MBxkMVQHAZ+tIktAhAnhLkKUGeoj+H6jIP5qv2P4VKm+iZ6glACjO0MUJf4j8S8DD6QusRQDBKrEeXSShAb4Oolmww0z+4C7eIKHESQKKqbyL7zw5An5Ppq4SxNED0gCU/KM4xQOayB3Gyz5Y/0PLja4ikHkAg4B/gH+D/PwAAAAAAAAAAK+jBzennIkCl0osn9tcjQFvhezUqlBlA8gsiMIStFkBAlzXxrRXGP4qO/O6rbxVA9CaTq/4EJkDxrmIBxDcBQNZ7gRtwgA5ADFvHAqY6HkBwJ5wixhzjPw==","dtype":"float64","shape":[32]},"colors1":["#fba55c","#b61026","#feeea3","#feeda1","#fdc675","#fdc473","#fef1a7","#006837","#fba25b","#f89053","#daef8d","#f99354","#f89053","#c9e880","#5ab760","#feea9d","#eff8a9","#e1f297","#c6e77f","#f2f9ad","#f26a41","#fdba6b","#2da154","#c4e67e","#fba25b","#1b9850","#86cb66","#fefebd","#fbfdb9","#df412f","#a50026","#ce2726"],"gCO2kWh":[530.1634472511145,880.4347826086956,351.0204081632653,351.3779527559055,456.4302416212003,459.5693779904306,339.57142857142856,14.647530603630225,531.4410480349345,566.1229611041405,215.8371040723982,561.4942528735633,570.0564971751413,188.07277628032347,77.06293706293705,360.3696098562628,260.61705989110703,231.54875717017208,187.04600484261502,269.10112359550567,644.267053701016,481.6363636363636,51.96220930232558,184.19023136246787,534.4051446945338,43.44919786096257,112.7508854781582,300.99403578528825,289.95215311004785,738.5514018691589,943.2367149758454,808.0495356037152],"index":["Netherlands","India","Denmark","Italy","United States","Chile","Slovenia","Norway","Mexico","Japan","Finland","Germany","Korea","Canada","France","Portugal","Spain","Slovak Republic","Austria","Latvia","Israel","Greece","Sweden","Belgium","Turkey","Switzerland","New Zealand","United Kingdom","Hungary","China, People's Republic of","Poland","Czech Republic"]},"selected":{"id":"112822","type":"Selection"},"selection_policy":{"id":"114561","type":"UnionRenderers"}},"id":"112757","type":"ColumnDataSource"},{"attributes":{"plot":{"id":"112760","subtype":"Figure","type":"Plot"},"ticker":{"id":"112771","type":"BasicTicker"}},"id":"112774","type":"Grid"},{"attributes":{"plot":null,"text":"Emissions from electricity and heat generation (gCO2eq / kWh)"},"id":"112759","type":"Title"},{"attributes":{"args":{"s1":{"id":"112757","type":"ColumnDataSource"},"s2":{"id":"112794","type":"ColumnDataSource"},"s3":{"id":"112821","type":"ColumnDataSource"}},"code":"\n        var inds = cb_obj.indices;\n        var d1 = s1.data;\n        var d2 = s2.data;\n        var d3 = s3.data;\n        var coal_m = 0\n        var oil_m = 0\n        var gas_m = 0\n        var nuclear_m = 0\n        var hydro_m = 0\n        var biofuels_m = 0\n        var waste_m = 0\n        var solarpv_m = 0\n        var wind_m = 0\n        var other_m = 0\n\n        \n        d2['means'] = []\n\n        if (inds.length == 0){   // default and reset value\n            for (var i = 0; i &lt; 10; i++) {\n                d2['means'].push(d3['mean'][i]) ;\n                }\n            s2.change.emit();\n            return;}\n        \n        \n        for (var i = 0; i &lt; inds.length; i++) {\n            coal_m += d1['Coal'][inds[i]] \n            oil_m += d1['Oil'][inds[i]]\n            gas_m += d1['Gas'][inds[i]]\n            nuclear_m += d1['Nuclear'][inds[i]]\n            hydro_m += d1['Hydro'][inds[i]]\n            biofuels_m += d1['Biofuels'][inds[i]]\n            waste_m += d1['Waste'][inds[i]]\n            solarpv_m += d1['Solar PV'][inds[i]]\n            wind_m += d1['Wind'][inds[i]]\n            other_m += d1['Other'][inds[i]]\n        }\n        \n        \n        coal_m /=inds.length \n        oil_m /=inds.length \n        gas_m /=inds.length \n        nuclear_m /=inds.length \n        hydro_m /=inds.length \n        biofuels_m /=inds.length \n        waste_m /=inds.length \n        solarpv_m /=inds.length \n        wind_m /=inds.length \n        other_m /=inds.length \n\n        \n        d2['means'] = [coal_m, oil_m, gas_m, nuclear_m, hydro_m, biofuels_m, waste_m, solarpv_m, wind_m, other_m]\n\n        s2.change.emit();\n    "},"id":"112823","type":"CustomJS"},{"attributes":{"formatter":{"id":"114555","type":"BasicTickFormatter"},"plot":{"id":"112760","subtype":"Figure","type":"Plot"},"ticker":{"id":"112776","type":"BasicTicker"}},"id":"112775","type":"LinearAxis"},{"attributes":{},"id":"112776","type":"BasicTicker"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_multi":null,"active_scroll":"auto","active_tap":"auto","tools":[{"id":"112780","type":"LassoSelectTool"},{"id":"112781","type":"ResetTool"},{"id":"112758","type":"HoverTool"}]},"id":"112784","type":"Toolbar"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"means"},"width":{"value":0.9},"x":{"field":"index"}},"id":"112818","type":"VBar"},{"attributes":{"dimension":1,"plot":{"id":"112760","subtype":"Figure","type":"Plot"},"ticker":{"id":"112776","type":"BasicTicker"}},"id":"112779","type":"Grid"},{"attributes":{},"id":"114555","type":"BasicTickFormatter"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"field":"colors"},"line_alpha":{"value":0.5},"line_color":{"value":"#1f77b4"},"top":{"field":"means"},"width":{"value":0.9},"x":{"field":"index"}},"id":"112817","type":"VBar"},{"attributes":{"axis_label":"nuclear share in electricity production (%)","formatter":{"id":"114553","type":"BasicTickFormatter"},"plot":{"id":"112760","subtype":"Figure","type":"Plot"},"ticker":{"id":"112771","type":"BasicTicker"}},"id":"112770","type":"LinearAxis"},{"attributes":{"callback":null},"id":"112764","type":"DataRange1d"},{"attributes":{},"id":"114557","type":"CategoricalTickFormatter"},{"attributes":{"plot":null,"text":"Average mix (%)"},"id":"112795","type":"Title"},{"attributes":{},"id":"112771","type":"BasicTicker"},{"attributes":{},"id":"114553","type":"BasicTickFormatter"},{"attributes":{"callback":null,"tooltips":[["","@Country"],["CO2","@gCO2kWh{0.} g/kWh"],["Production","@Production{0.} TWh"]]},"id":"112758","type":"HoverTool"},{"attributes":{},"id":"114559","type":"BasicTickFormatter"},{"attributes":{"callback":null,"data":{"mean":{"__ndarray__":"ms3RYET2OEC2F+zUMpD/P2zZBZuxVjRAt7X5jGCwMEC6kVMaGXE1QFp/ukUrABFAMcjeX8Lb8D91CBs8ebr/P30HLiIJ7xlAoClSeotr6j8=","dtype":"float64","shape":[10]}},"selected":{"id":"114565","type":"Selection"},"selection_policy":{"id":"114566","type":"UnionRenderers"}},"id":"112821","type":"ColumnDataSource"},{"attributes":{},"id":"114561","type":"UnionRenderers"},{"attributes":{"below":[{"id":"112806","type":"CategoricalAxis"}],"left":[{"id":"112810","type":"LinearAxis"}],"plot_height":180,"plot_width":800,"renderers":[{"id":"112806","type":"CategoricalAxis"},{"id":"112809","type":"Grid"},{"id":"112810","type":"LinearAxis"},{"id":"112814","type":"Grid"},{"id":"112819","type":"GlyphRenderer"}],"title":{"id":"112795","type":"Title"},"toolbar":{"id":"112815","type":"Toolbar"},"toolbar_location":null,"x_range":{"id":"112798","type":"FactorRange"},"x_scale":{"id":"112802","type":"CategoricalScale"},"y_range":{"id":"112800","type":"DataRange1d"},"y_scale":{"id":"112804","type":"LinearScale"}},"id":"112796","subtype":"Figure","type":"Plot"},{"attributes":{"formatter":{"id":"114557","type":"CategoricalTickFormatter"},"plot":{"id":"112796","subtype":"Figure","type":"Plot"},"ticker":{"id":"112807","type":"CategoricalTicker"}},"id":"112806","type":"CategoricalAxis"},{"attributes":{},"id":"114563","type":"Selection"},{"attributes":{},"id":"112807","type":"CategoricalTicker"},{"attributes":{"callback":null},"id":"112762","type":"DataRange1d"},{"attributes":{},"id":"114564","type":"UnionRenderers"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"size":{"field":"Size","units":"screen"},"x":{"field":"Nuclear"},"y":{"field":"gCO2kWh"}},"id":"112790","type":"Circle"},{"attributes":{"callback":null,"overlay":{"id":"112782","type":"PolyAnnotation"}},"id":"112780","type":"LassoSelectTool"},{"attributes":{},"id":"112766","type":"LinearScale"},{"attributes":{"plot":{"id":"112796","subtype":"Figure","type":"Plot"},"ticker":{"id":"112807","type":"CategoricalTicker"}},"id":"112809","type":"Grid"},{"attributes":{"fill_alpha":{"value":0.5},"fill_color":{"value":"lightgrey"},"level":"overlay","line_alpha":{"value":1.0},"line_color":{"value":"black"},"line_dash":[4,4],"line_width":{"value":2},"plot":null,"xs_units":"screen","ys_units":"screen"},"id":"112782","type":"PolyAnnotation"},{"attributes":{},"id":"112804","type":"LinearScale"},{"attributes":{"below":[{"id":"112770","type":"LinearAxis"}],"left":[{"id":"112775","type":"LinearAxis"}],"plot_height":400,"plot_width":800,"renderers":[{"id":"112770","type":"LinearAxis"},{"id":"112774","type":"Grid"},{"id":"112775","type":"LinearAxis"},{"id":"112779","type":"Grid"},{"id":"112782","type":"PolyAnnotation"},{"id":"112792","type":"GlyphRenderer"}],"title":{"id":"112759","type":"Title"},"toolbar":{"id":"112784","type":"Toolbar"},"toolbar_location":"above","x_range":{"id":"112762","type":"DataRange1d"},"x_scale":{"id":"112766","type":"LinearScale"},"y_range":{"id":"112764","type":"DataRange1d"},"y_scale":{"id":"112768","type":"LinearScale"}},"id":"112760","subtype":"Figure","type":"Plot"},{"attributes":{},"id":"112781","type":"ResetTool"},{"attributes":{},"id":"114565","type":"Selection"},{"attributes":{},"id":"114566","type":"UnionRenderers"},{"attributes":{"data_source":{"id":"112757","type":"ColumnDataSource"},"glyph":{"id":"112789","type":"Circle"},"hover_glyph":{"id":"112791","type":"Circle"},"muted_glyph":null,"nonselection_glyph":{"id":"112790","type":"Circle"},"selection_glyph":null,"view":{"id":"112793","type":"CDSView"}},"id":"112792","type":"GlyphRenderer"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_multi":null,"active_scroll":"auto","active_tap":"auto"},"id":"112815","type":"Toolbar"},{"attributes":{"fill_color":{"value":"yellow"},"line_color":{"value":"#1f77b4"},"size":{"field":"Size","units":"screen"},"x":{"field":"Nuclear"},"y":{"field":"gCO2kWh"}},"id":"112791","type":"Circle"},{"attributes":{"formatter":{"id":"114559","type":"BasicTickFormatter"},"plot":{"id":"112796","subtype":"Figure","type":"Plot"},"ticker":{"id":"112811","type":"BasicTicker"}},"id":"112810","type":"LinearAxis"},{"attributes":{},"id":"112802","type":"CategoricalScale"},{"attributes":{},"id":"112811","type":"BasicTicker"},{"attributes":{},"id":"112768","type":"LinearScale"},{"attributes":{"dimension":1,"plot":{"id":"112796","subtype":"Figure","type":"Plot"},"ticker":{"id":"112811","type":"BasicTicker"}},"id":"112814","type":"Grid"},{"attributes":{"data_source":{"id":"112794","type":"ColumnDataSource"},"glyph":{"id":"112817","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"112818","type":"VBar"},"selection_glyph":null,"view":{"id":"112820","type":"CDSView"}},"id":"112819","type":"GlyphRenderer"},{"attributes":{"callback":null},"id":"112800","type":"DataRange1d"}],"root_ids":["112824"]},"title":"Bokeh Application","version":"1.0.2"}}
+        </script>
+        <script type="text/javascript">
+          (function() {
+            var fn = function() {
+              Bokeh.safely(function() {
+                (function(root) {
+                  function embed_document(root) {
+                    
+                  var docs_json = document.getElementById('114809').textContent;
+                  var render_items = [{"docid":"7b33d68f-d6d2-411c-bd62-6cd0c87c1453","roots":{"112824":"6fc081fb-3065-4844-9755-3f1300df99d3"}}];
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                
+                  }
+                  if (root.Bokeh !== undefined) {
+                    embed_document(root);
+                  } else {
+                    var attempts = 0;
+                    var timer = setInterval(function(root) {
+                      if (root.Bokeh !== undefined) {
+                        embed_document(root);
+                        clearInterval(timer);
+                      }
+                      attempts++;
+                      if (attempts > 100) {
+                        console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                        clearInterval(timer);
+                      }
+                    }, 10, root)
+                  }
+                })(window);
+              });
+            };
+            if (document.readyState != "loading") fn();
+            else document.addEventListener("DOMContentLoaded", fn);
+          })();
+        </script>
+        <br /> 
+        <p>
+          💡 <span class="hint">Use the lasso tool to select countries and see their average mix</span>
+        </p>
+        <p>
+          Source : IEA
+          <ul>
+            <li><a href="https://www.iea.org/fuels-and-technologies/electricity">Electricity generation by source</a></li>
+            <li>
+              <a href="http://www.indiaenvironmentportal.org.in/files/file/CO2_Emissions_from_Fuel_Combustion_2018_Highlights.pdf">CO2 EMISSIONS FROM FUEL COMBUSTION Highlights (2018 edition)</a>
+            </li>
+          </ul>
+        </p>
+      </div>
+  </body>
+  
+</html>
